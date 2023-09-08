@@ -1,15 +1,23 @@
-﻿namespace RadiusofCircle
+﻿using System.Reflection.Metadata;
+
+namespace RadiusofCircle
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
-        {
-            Console.Write("Enter the Radious of Circle : ");
-            double Radious = Convert.ToDouble(Console.ReadLine());
-            double Area = Math.PI * Radious * Radious;
-            double Perimeter = 2 * Math.PI * Radious;
-            Console.WriteLine("Area of circle: " + Area);
-            Console.WriteLine("Perimeter of Circle: " + Perimeter);
+        {   
+            //prompts to enter radius and diplays input radius
+            Console.Write("Input the Radius of the Circle : ");
+            //reads input radius and converts to double and store in radius
+            double Radius = Convert.ToDouble(Console.ReadLine());
+
+            //calculates the area and perimeter of the circle
+            double Area = Math.PI * Radius * Radius;
+            double Perimeter = 2 * Math.PI * Radius;
+            //using string format, prints the area and perimeter of circle, and displays
+            Console.WriteLine("Area of Circle= {0} ", string.Format("{0:0.00}", Area));
+            Console.WriteLine("Perimeter of Circle={0} ", string.Format("{0:0.00}", Perimeter));
+            //waits to press anykey before its exits
             Console.ReadKey();
         }
     }
