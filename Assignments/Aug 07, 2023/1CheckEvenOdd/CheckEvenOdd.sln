@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckEvenOdd", "CheckEvenOdd.csproj", "{B9BA0B91-EB50-4620-B8AC-485917331DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9BA0B91-EB50-4620-B8AC-485917331DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9BA0B91-EB50-4620-B8AC-485917331DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9BA0B91-EB50-4620-B8AC-485917331DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9BA0B91-EB50-4620-B8AC-485917331DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0B7AC31-B09E-4B06-9A3A-3E2D4102F59F}
+	EndGlobalSection
+EndGlobal
