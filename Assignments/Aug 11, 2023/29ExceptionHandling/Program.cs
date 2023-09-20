@@ -1,33 +1,40 @@
 ﻿namespace ExceptionHandling
 {
-    internal class Program
+    public class Program
     {
         static void Main()
-        {
+        {   
+            // Starts a try-catch block to handle potential exceptions.
             try
             {   Console.Write("Input a number: ");
                 double number = Convert.ToDouble(Console.ReadLine());
 
                 if (number >= 0)
-                {  double squareRoot =Math.Sqrt(number);
+                {   
+                    // Calculates squareroort of the number and stores in squareRoot.
+                    double squareRoot =Math.Sqrt(number);
                     Console.WriteLine("Square root:" + squareRoot);
                 }
                 else
                 {
-                 throw new ArgumentException("Number cannot be negative!");
+                   // If 'number' is negative, throws an 'ArgumentException' message.
+                    throw new ArgumentException("Number cannot be negative!");
                 }
             }
             catch (FormatException)
             {
-             Console.WriteLine("Error: Invalid input. Please input a valid number.");
+                // Catch a 'FormatException' if input that cannot be converted to a double.
+                Console.WriteLine("Error: Invalid input. Please input a valid number.");
             }
             catch (ArgumentException ex)
-            {
-             Console.WriteLine("Error: " + ex.Message);
+            { 
+              // Catch a 'ArgumentException' and prints exception error message.
+                Console.WriteLine("Error: " + ex.Message);
             }
             catch (Exception ex)
             {
-             Console.WriteLine("An error occurred: " + ex.Message);
+              // Catch any other exception and prints a error message.
+                Console.WriteLine("An error occurred: " + ex.Message);
             }
         }
     }

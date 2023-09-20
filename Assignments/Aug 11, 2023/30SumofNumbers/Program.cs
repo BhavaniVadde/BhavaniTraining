@@ -2,7 +2,7 @@
 
 namespace SumofNumbers
 {
-    internal class Program
+    public class Program
     {
         static int SumOfDigits(int number)
         {
@@ -17,11 +17,12 @@ namespace SumofNumbers
         }
 
         static void Main(string[] args)
-        {Console.Write("Enter a number: ");
-         int userInput = Convert.ToInt32(Console.ReadLine());
+        {
+            Console.Write("Enter a number: ");
+            int userInput = Convert.ToInt32(Console.ReadLine());
 
-         int sum = SumOfDigits(userInput);
-         Console.WriteLine($"Sum of digits in {userInput} is {sum}");
+            int sum = SumOfDigits(userInput);
+            Console.WriteLine($"Sum of digits in {userInput} is {sum}");
         }
     }
 }
