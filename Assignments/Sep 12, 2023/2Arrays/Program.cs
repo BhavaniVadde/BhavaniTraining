@@ -17,7 +17,7 @@ namespace _2Arrays
                 Console.Write($"Enter value {i + 0} : ");
                 arr[i] = Convert.ToInt32(Console.ReadLine());
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 1; i <= n; i++)
             {
                 // Iterate through the array and add each element to the sum
                 sum += arr[i];
